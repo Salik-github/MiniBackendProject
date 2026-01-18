@@ -44,8 +44,16 @@ jobs:
       - name: Run Rest Assured API tests
         working-directory: ownbackendapis
         run: mvn clean test
-      - name: Upload TestNG Reports
-        uses: actions/upload-artifact@v4
+
+      - name: Publish TestNG Report to GitHub Pages
+        if: always()
+        run: |
+          mkdir -p public
+          cp -r ownbackendapis/target/surefire-reports/* public/
+          touch public/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: testng-reports
-          path: ownbackendapis/target/surefire-reports
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
