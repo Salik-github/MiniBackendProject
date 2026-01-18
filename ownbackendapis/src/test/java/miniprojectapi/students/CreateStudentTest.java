@@ -2,6 +2,7 @@ package miniprojectapi.students;
 
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import miniprojectapi.api.APIRequest;
 import miniprojectapi.base.BaseTest;
@@ -12,6 +13,7 @@ import static miniprojectapi.students.StudentBase.generateStudentValidPayload;
 
 public class CreateStudentTest extends BaseTest {
 
+    @Description("Create student API test")
     @Test
     public void createStudentTest() {
 
