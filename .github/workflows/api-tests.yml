@@ -1,0 +1,46 @@
+name: API Automation Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Setup Node.js (for backend)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # 3️⃣ Install backend dependencies
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm install
+
+      # 4️⃣ Start backend server
+      - name: Start backend server
+        working-directory: backend
+        run: |
+          npm start &
+          sleep 10
+
+      # 5️⃣ Setup Java (for Rest Assured)
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # 6️⃣ Run API tests
+      - name: Run Rest Assured API tests
+        working-directory: api-tests
+        run: mvn clean test
