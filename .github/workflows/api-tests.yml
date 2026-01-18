@@ -44,3 +44,8 @@ jobs:
       - name: Run Rest Assured API tests
         working-directory: ownbackendapis
         run: mvn clean test
+      - name: Upload TestNG Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: testng-reports
+          path: ownbackendapis/target/surefire-reports
