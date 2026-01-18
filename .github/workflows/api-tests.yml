@@ -42,5 +42,5 @@ jobs:
 
       # 6️⃣ Run API tests
       - name: Run Rest Assured API tests
-        working-directory: api-tests
+        working-directory: ownbackendapis
         run: mvn clean test
