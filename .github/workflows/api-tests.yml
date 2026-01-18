@@ -51,10 +51,4 @@ jobs:
           cd ownbackendapis
           mvn allure:report
 
-      - name: Upload Allure Report Artifact
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:     
-          name: allure-report 
-          path: ownbackendapis/target/site/allure-maven-plugin  
           
