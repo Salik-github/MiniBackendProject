@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mini Project API Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Student Tests">
+        <packages>
+            <package name="miniprojectapi.students"/>
+            <package name="miniprojectapi.applications"/>
+            <package name="miniprojectapi.courses"/>
+        </packages>
+    </test>
+
+</suite>

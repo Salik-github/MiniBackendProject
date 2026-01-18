@@ -1,0 +1,10 @@
+miniprojectapi/applications/ApplicationBase.class
+miniprojectapi/students/StudentBase.class
+miniprojectapi/base/BaseTest.class
+miniprojectapi/courses/GetCourseTest.class
+miniprojectapi/students/GetStudentTest.class
+miniprojectapi/courses/CreateCourseTest.class
+miniprojectapi/applications/GetApplicationTest.class
+miniprojectapi/students/CreateStudentTest.class
+miniprojectapi/applications/ApplyApplicationTest.class
+miniprojectapi/courses/CourseBase.class

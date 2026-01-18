@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>TestNG:  Student Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Student Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 18 20:07:43 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3896 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='miniprojectapi.students.GetStudentTest.verifyStudentResponseStructureIsCorrectWhenNoneExist()'><b>verifyStudentResponseStructureIsCorrectWhenNoneExist</b><br>Test class: miniprojectapi.students.GetStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.GetStudentTest@6c37bd27</td></tr>
+<tr>
+<td title='miniprojectapi.students.CreateStudentTest.verifyduplicateEmailNotAllowed()'><b>verifyduplicateEmailNotAllowed</b><br>Test class: miniprojectapi.students.CreateStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.CreateStudentTest@677b8e13</td></tr>
+<tr>
+<td title='miniprojectapi.courses.CreateCourseTest.verifyDefaultStatus()'><b>verifyDefaultStatus</b><br>Test class: miniprojectapi.courses.CreateCourseTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.courses.CreateCourseTest@7bde1f3a</td></tr>
+<tr>
+<td title='miniprojectapi.courses.GetCourseTest.verifyGetAllCourses()'><b>verifyGetAllCourses</b><br>Test class: miniprojectapi.courses.GetCourseTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.courses.GetCourseTest@15923407</td></tr>
+<tr>
+<td title='miniprojectapi.students.GetStudentTest.verifyStudentApplicationsInitialZero()'><b>verifyStudentApplicationsInitialZero</b><br>Test class: miniprojectapi.students.GetStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.GetStudentTest@6c37bd27</td></tr>
+<tr>
+<td title='miniprojectapi.courses.CreateCourseTest.createCourseWithoutRequiredData()'><b>createCourseWithoutRequiredData</b><br>Test class: miniprojectapi.courses.CreateCourseTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.courses.CreateCourseTest@7bde1f3a</td></tr>
+<tr>
+<td title='miniprojectapi.students.GetStudentTest.getStudentById()'><b>getStudentById</b><br>Test class: miniprojectapi.students.GetStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.GetStudentTest@6c37bd27</td></tr>
+<tr>
+<td title='miniprojectapi.courses.CreateCourseTest.verifyDuplicateCourseCodeNotAllowed()'><b>verifyDuplicateCourseCodeNotAllowed</b><br>Test class: miniprojectapi.courses.CreateCourseTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.courses.CreateCourseTest@7bde1f3a</td></tr>
+<tr>
+<td title='miniprojectapi.students.GetStudentTest.getAllStudents()'><b>getAllStudents</b><br>Test class: miniprojectapi.students.GetStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.GetStudentTest@6c37bd27</td></tr>
+<tr>
+<td title='miniprojectapi.applications.ApplyApplicationTest.applyApplicationWithInvalidCourseId()'><b>applyApplicationWithInvalidCourseId</b><br>Test class: miniprojectapi.applications.ApplyApplicationTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.applications.ApplyApplicationTest@4c27d39d</td></tr>
+<tr>
+<td title='miniprojectapi.students.GetStudentTest.getStudentByInvalidId()'><b>getStudentByInvalidId</b><br>Test class: miniprojectapi.students.GetStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.GetStudentTest@6c37bd27</td></tr>
+<tr>
+<td title='miniprojectapi.courses.CreateCourseTest.createCourseTest()'><b>createCourseTest</b><br>Test class: miniprojectapi.courses.CreateCourseTest</td>
+<td></td>
+<td>2</td>
+<td>miniprojectapi.courses.CreateCourseTest@7bde1f3a</td></tr>
+<tr>
+<td title='miniprojectapi.applications.ApplyApplicationTest.applyApplicationWithInvalidStudentId()'><b>applyApplicationWithInvalidStudentId</b><br>Test class: miniprojectapi.applications.ApplyApplicationTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.applications.ApplyApplicationTest@4c27d39d</td></tr>
+<tr>
+<td title='miniprojectapi.applications.ApplyApplicationTest.applyApplyDuplicateApplication()'><b>applyApplyDuplicateApplication</b><br>Test class: miniprojectapi.applications.ApplyApplicationTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.applications.ApplyApplicationTest@4c27d39d</td></tr>
+<tr>
+<td title='miniprojectapi.applications.GetApplicationTest.getApplicationWithInvalidApplicationId()'><b>getApplicationWithInvalidApplicationId</b><br>Test class: miniprojectapi.applications.GetApplicationTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.applications.GetApplicationTest@40ee0a22</td></tr>
+<tr>
+<td title='miniprojectapi.applications.GetApplicationTest.getApplicationWithValidApplicationId()'><b>getApplicationWithValidApplicationId</b><br>Test class: miniprojectapi.applications.GetApplicationTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.applications.GetApplicationTest@40ee0a22</td></tr>
+<tr>
+<td title='miniprojectapi.applications.ApplyApplicationTest.applyApplicationWithEmptyPayload()'><b>applyApplicationWithEmptyPayload</b><br>Test class: miniprojectapi.applications.ApplyApplicationTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.applications.ApplyApplicationTest@4c27d39d</td></tr>
+<tr>
+<td title='miniprojectapi.applications.ApplyApplicationTest.applyApplicationWithValidStudentIdAndCourseId()'><b>applyApplicationWithValidStudentIdAndCourseId</b><br>Test class: miniprojectapi.applications.ApplyApplicationTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.applications.ApplyApplicationTest@4c27d39d</td></tr>
+<tr>
+<td title='miniprojectapi.courses.GetCourseTest.verifyGetCourseByInvalidId()'><b>verifyGetCourseByInvalidId</b><br>Test class: miniprojectapi.courses.GetCourseTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.courses.GetCourseTest@15923407</td></tr>
+<tr>
+<td title='miniprojectapi.students.CreateStudentTest.createStudentWithoutRequiredData()'><b>createStudentWithoutRequiredData</b><br>Test class: miniprojectapi.students.CreateStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.CreateStudentTest@677b8e13</td></tr>
+<tr>
+<td title='miniprojectapi.students.CreateStudentTest.createStudentTest()'><b>createStudentTest</b><br>Test class: miniprojectapi.students.CreateStudentTest</td>
+<td></td>
+<td>0</td>
+<td>miniprojectapi.students.CreateStudentTest@677b8e13</td></tr>
+</table><p>
+</body>
+</html>

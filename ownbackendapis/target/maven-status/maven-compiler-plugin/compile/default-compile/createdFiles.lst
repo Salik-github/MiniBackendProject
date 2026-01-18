@@ -1,0 +1,10 @@
+miniprojectapi/utils/TestDataGenerator.class
+miniprojectapi/payloads/ApplicationPayload.class
+miniprojectapi/api/APIRequest.class
+miniprojectapi/payloads/CoursePayload.class
+miniprojectapi/config/Endpoints.class
+miniprojectapi/config/BaseURI.class
+miniprojectapi/utils/JsonUtils.class
+miniprojectapi/utils/ConfigReader.class
+miniprojectapi/payloads/StudentPayload.class
+miniprojectapi/api/RequestSpec.class

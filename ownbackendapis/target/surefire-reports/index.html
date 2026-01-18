@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Mini_Project_API_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Mini Project API Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Mini_Project_API_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Mini_Project_API_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Mini_Project_API_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Mini_Project_API_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Mini_Project_API_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Mini_Project_API_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Mini_Project_API_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Mini_Project_API_Suite" class="hide-methods passed suite-Mini_Project_API_Suite"> (hide)</a> <!-- hide-methods passed suite-Mini_Project_API_Suite -->
+                      <a href="#" panel-name="suite-Mini_Project_API_Suite" class="show-methods passed suite-Mini_Project_API_Suite"> (show)</a> <!-- show-methods passed suite-Mini_Project_API_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Mini_Project_API_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.applications.ApplyApplicationTest" class="method navigator-link" hash-for-method="applyApplicationWithEmptyPayload">applyApplicationWithEmptyPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.applications.ApplyApplicationTest" class="method navigator-link" hash-for-method="applyApplicationWithInvalidCourseId">applyApplicationWithInvalidCourseId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.applications.ApplyApplicationTest" class="method navigator-link" hash-for-method="applyApplicationWithInvalidStudentId">applyApplicationWithInvalidStudentId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.applications.ApplyApplicationTest" class="method navigator-link" hash-for-method="applyApplicationWithValidStudentIdAndCourseId">applyApplicationWithValidStudentIdAndCourseId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.applications.ApplyApplicationTest" class="method navigator-link" hash-for-method="applyApplyDuplicateApplication">applyApplyDuplicateApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.courses.CreateCourseTest" class="method navigator-link" hash-for-method="createCourseTest">createCourseTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.courses.CreateCourseTest" class="method navigator-link" hash-for-method="createCourseWithoutRequiredData">createCourseWithoutRequiredData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.CreateStudentTest" class="method navigator-link" hash-for-method="createStudentTest">createStudentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.CreateStudentTest" class="method navigator-link" hash-for-method="createStudentWithoutRequiredData">createStudentWithoutRequiredData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.GetStudentTest" class="method navigator-link" hash-for-method="getAllStudents">getAllStudents</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.applications.GetApplicationTest" class="method navigator-link" hash-for-method="getApplicationWithInvalidApplicationId">getApplicationWithInvalidApplicationId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.applications.GetApplicationTest" class="method navigator-link" hash-for-method="getApplicationWithValidApplicationId">getApplicationWithValidApplicationId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.GetStudentTest" class="method navigator-link" hash-for-method="getStudentById">getStudentById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.GetStudentTest" class="method navigator-link" hash-for-method="getStudentByInvalidId">getStudentByInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.courses.CreateCourseTest" class="method navigator-link" hash-for-method="verifyDefaultStatus">verifyDefaultStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.courses.CreateCourseTest" class="method navigator-link" hash-for-method="verifyDuplicateCourseCodeNotAllowed">verifyDuplicateCourseCodeNotAllowed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.courses.GetCourseTest" class="method navigator-link" hash-for-method="verifyGetAllCourses">verifyGetAllCourses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.courses.GetCourseTest" class="method navigator-link" hash-for-method="verifyGetCourseByInvalidId">verifyGetCourseByInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.GetStudentTest" class="method navigator-link" hash-for-method="verifyStudentApplicationsInitialZero">verifyStudentApplicationsInitialZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.GetStudentTest" class="method navigator-link" hash-for-method="verifyStudentResponseStructureIsCorrectWhenNoneExist">verifyStudentResponseStructureIsCorrectWhenNoneExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mini_Project_API_Suite" title="miniprojectapi.students.CreateStudentTest" class="method navigator-link" hash-for-method="verifyduplicateEmailNotAllowed">verifyduplicateEmailNotAllowed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Mini_Project_API_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Mini_Project_API_Suite" class="panel Mini_Project_API_Suite">
+          <div class="suite-Mini_Project_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">miniprojectapi.courses.CreateCourseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCourseTest">
+                  </a> <!-- createCourseTest -->
+                  <span class="method-name">createCourseTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCourseWithoutRequiredData">
+                  </a> <!-- createCourseWithoutRequiredData -->
+                  <span class="method-name">createCourseWithoutRequiredData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDefaultStatus">
+                  </a> <!-- verifyDefaultStatus -->
+                  <span class="method-name">verifyDefaultStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDuplicateCourseCodeNotAllowed">
+                  </a> <!-- verifyDuplicateCourseCodeNotAllowed -->
+                  <span class="method-name">verifyDuplicateCourseCodeNotAllowed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mini_Project_API_Suite-class-passed -->
+          <div class="suite-Mini_Project_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">miniprojectapi.applications.GetApplicationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getApplicationWithInvalidApplicationId">
+                  </a> <!-- getApplicationWithInvalidApplicationId -->
+                  <span class="method-name">getApplicationWithInvalidApplicationId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getApplicationWithValidApplicationId">
+                  </a> <!-- getApplicationWithValidApplicationId -->
+                  <span class="method-name">getApplicationWithValidApplicationId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mini_Project_API_Suite-class-passed -->
+          <div class="suite-Mini_Project_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">miniprojectapi.students.GetStudentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllStudents">
+                  </a> <!-- getAllStudents -->
+                  <span class="method-name">getAllStudents</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStudentById">
+                  </a> <!-- getStudentById -->
+                  <span class="method-name">getStudentById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStudentByInvalidId">
+                  </a> <!-- getStudentByInvalidId -->
+                  <span class="method-name">getStudentByInvalidId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStudentApplicationsInitialZero">
+                  </a> <!-- verifyStudentApplicationsInitialZero -->
+                  <span class="method-name">verifyStudentApplicationsInitialZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStudentResponseStructureIsCorrectWhenNoneExist">
+                  </a> <!-- verifyStudentResponseStructureIsCorrectWhenNoneExist -->
+                  <span class="method-name">verifyStudentResponseStructureIsCorrectWhenNoneExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mini_Project_API_Suite-class-passed -->
+          <div class="suite-Mini_Project_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">miniprojectapi.students.CreateStudentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createStudentTest">
+                  </a> <!-- createStudentTest -->
+                  <span class="method-name">createStudentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createStudentWithoutRequiredData">
+                  </a> <!-- createStudentWithoutRequiredData -->
+                  <span class="method-name">createStudentWithoutRequiredData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyduplicateEmailNotAllowed">
+                  </a> <!-- verifyduplicateEmailNotAllowed -->
+                  <span class="method-name">verifyduplicateEmailNotAllowed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mini_Project_API_Suite-class-passed -->
+          <div class="suite-Mini_Project_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">miniprojectapi.applications.ApplyApplicationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyApplicationWithEmptyPayload">
+                  </a> <!-- applyApplicationWithEmptyPayload -->
+                  <span class="method-name">applyApplicationWithEmptyPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyApplicationWithInvalidCourseId">
+                  </a> <!-- applyApplicationWithInvalidCourseId -->
+                  <span class="method-name">applyApplicationWithInvalidCourseId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyApplicationWithInvalidStudentId">
+                  </a> <!-- applyApplicationWithInvalidStudentId -->
+                  <span class="method-name">applyApplicationWithInvalidStudentId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyApplicationWithValidStudentIdAndCourseId">
+                  </a> <!-- applyApplicationWithValidStudentIdAndCourseId -->
+                  <span class="method-name">applyApplicationWithValidStudentIdAndCourseId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyApplyDuplicateApplication">
+                  </a> <!-- applyApplyDuplicateApplication -->
+                  <span class="method-name">applyApplyDuplicateApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mini_Project_API_Suite-class-passed -->
+          <div class="suite-Mini_Project_API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">miniprojectapi.courses.GetCourseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllCourses">
+                  </a> <!-- verifyGetAllCourses -->
+                  <span class="method-name">verifyGetAllCourses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetCourseByInvalidId">
+                  </a> <!-- verifyGetCourseByInvalidId -->
+                  <span class="method-name">verifyGetCourseByInvalidId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mini_Project_API_Suite-class-passed -->
+        </div> <!-- panel Mini_Project_API_Suite -->
+        <div panel-name="test-xml-Mini_Project_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/prakashni/Music/miniproject/ownbackendapis/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Mini Project API Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Student Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;miniprojectapi.students&quot;/&gt;
+      &lt;package name=&quot;miniprojectapi.applications&quot;/&gt;
+      &lt;package name=&quot;miniprojectapi.courses&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;miniprojectapi.students.StudentBase&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.students.GetStudentTest&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.students.CreateStudentTest&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.applications.ApplicationBase&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.applications.ApplyApplicationTest&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.applications.GetApplicationTest&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.courses.CreateCourseTest&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.courses.CourseBase&quot;/&gt;
+      &lt;class name=&quot;miniprojectapi.courses.GetCourseTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Student Tests --&gt;
+&lt;/suite&gt; &lt;!-- Mini Project API Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Mini_Project_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Mini Project API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Student Tests (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Mini_Project_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Mini Project API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Mini_Project_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Mini Project API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Mini_Project_API_Suite');
+function tableData_Mini_Project_API_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createCourseTest')
+data.setCell(0, 2, 'miniprojectapi.courses.CreateCourseTest')
+data.setCell(0, 3, 2384);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyStudentResponseStructureIsCorrectWhenNoneExist')
+data.setCell(1, 2, 'miniprojectapi.students.GetStudentTest')
+data.setCell(1, 3, 190);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getStudentById')
+data.setCell(2, 2, 'miniprojectapi.students.GetStudentTest')
+data.setCell(2, 3, 143);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'applyApplicationWithValidStudentIdAndCourseId')
+data.setCell(3, 2, 'miniprojectapi.applications.ApplyApplicationTest')
+data.setCell(3, 3, 136);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getApplicationWithValidApplicationId')
+data.setCell(4, 2, 'miniprojectapi.applications.GetApplicationTest')
+data.setCell(4, 3, 134);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'applyApplyDuplicateApplication')
+data.setCell(5, 2, 'miniprojectapi.applications.ApplyApplicationTest')
+data.setCell(5, 3, 105);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyStudentApplicationsInitialZero')
+data.setCell(6, 2, 'miniprojectapi.students.GetStudentTest')
+data.setCell(6, 3, 96);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getAllStudents')
+data.setCell(7, 2, 'miniprojectapi.students.GetStudentTest')
+data.setCell(7, 3, 86);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'applyApplicationWithInvalidStudentId')
+data.setCell(8, 2, 'miniprojectapi.applications.ApplyApplicationTest')
+data.setCell(8, 3, 68);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyDefaultStatus')
+data.setCell(9, 2, 'miniprojectapi.courses.CreateCourseTest')
+data.setCell(9, 3, 54);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'applyApplicationWithInvalidCourseId')
+data.setCell(10, 2, 'miniprojectapi.applications.ApplyApplicationTest')
+data.setCell(10, 3, 54);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyDuplicateCourseCodeNotAllowed')
+data.setCell(11, 2, 'miniprojectapi.courses.CreateCourseTest')
+data.setCell(11, 3, 46);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyduplicateEmailNotAllowed')
+data.setCell(12, 2, 'miniprojectapi.students.CreateStudentTest')
+data.setCell(12, 3, 30);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createCourseWithoutRequiredData')
+data.setCell(13, 2, 'miniprojectapi.courses.CreateCourseTest')
+data.setCell(13, 3, 28);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createStudentTest')
+data.setCell(14, 2, 'miniprojectapi.students.CreateStudentTest')
+data.setCell(14, 3, 26);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'applyApplicationWithEmptyPayload')
+data.setCell(15, 2, 'miniprojectapi.applications.ApplyApplicationTest')
+data.setCell(15, 3, 19);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'createStudentWithoutRequiredData')
+data.setCell(16, 2, 'miniprojectapi.students.CreateStudentTest')
+data.setCell(16, 3, 18);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyGetAllCourses')
+data.setCell(17, 2, 'miniprojectapi.courses.GetCourseTest')
+data.setCell(17, 3, 14);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'getStudentByInvalidId')
+data.setCell(18, 2, 'miniprojectapi.students.GetStudentTest')
+data.setCell(18, 3, 13);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'getApplicationWithInvalidApplicationId')
+data.setCell(19, 2, 'miniprojectapi.applications.GetApplicationTest')
+data.setCell(19, 3, 10);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyGetCourseByInvalidId')
+data.setCell(20, 2, 'miniprojectapi.courses.GetCourseTest')
+data.setCell(20, 3, 10);
+window.suiteTableData['Mini_Project_API_Suite']= { tableData: data, tableDiv: 'times-div-Mini_Project_API_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-Mini_Project_API_Suite">
+              </div> <!-- times-div-Mini_Project_API_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Mini_Project_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Mini Project API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Mini_Project_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">miniprojectapi.courses.CreateCourseTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">miniprojectapi.applications.GetApplicationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">miniprojectapi.students.CreateStudentTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">miniprojectapi.applications.ApplyApplicationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">miniprojectapi.courses.GetCourseTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">miniprojectapi.applications.ApplicationBase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Mini_Project_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">miniprojectapi.students.GetStudentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">miniprojectapi.courses.CreateCourseTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createCourseTest</span>
+                <span class="method-start">789 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCourseWithoutRequiredData</span>
+                <span class="method-start">3287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDefaultStatus</span>
+                <span class="method-start">3323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDuplicateCourseCodeNotAllowed</span>
+                <span class="method-start">3379 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">miniprojectapi.students.GetStudentTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllStudents</span>
+                <span class="method-start">3427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getStudentById</span>
+                <span class="method-start">3515 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getStudentByInvalidId</span>
+                <span class="method-start">3660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyStudentApplicationsInitialZero</span>
+                <span class="method-start">3675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyStudentResponseStructureIsCorrectWhenNoneExist</span>
+                <span class="method-start">3774 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">miniprojectapi.applications.ApplyApplicationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">applyApplicationWithEmptyPayload</span>
+                <span class="method-start">3966 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">applyApplicationWithInvalidCourseId</span>
+                <span class="method-start">3988 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">applyApplicationWithInvalidStudentId</span>
+                <span class="method-start">4043 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">applyApplicationWithValidStudentIdAndCourseId</span>
+                <span class="method-start">4112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">applyApplyDuplicateApplication</span>
+                <span class="method-start">4252 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">miniprojectapi.students.CreateStudentTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createStudentTest</span>
+                <span class="method-start">4360 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createStudentWithoutRequiredData</span>
+                <span class="method-start">4390 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyduplicateEmailNotAllowed</span>
+                <span class="method-start">4416 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">miniprojectapi.applications.GetApplicationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getApplicationWithInvalidApplicationId</span>
+                <span class="method-start">4448 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getApplicationWithValidApplicationId</span>
+                <span class="method-start">4460 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">miniprojectapi.courses.GetCourseTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllCourses</span>
+                <span class="method-start">4596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetCourseByInvalidId</span>
+                <span class="method-start">4613 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
