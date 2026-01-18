@@ -72,7 +72,7 @@ router.post('/', (req, res) => {
   applications.push(application);
 
   // 6. Success response
-  return res.status(201).json({
+  return res.status(202).json({
     message: 'Application submitted successfully',
     application
   });

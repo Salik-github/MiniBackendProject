@@ -51,8 +51,10 @@ jobs:
           cd ownbackendapis
           mvn allure:report
 
-      - name: Deploy Allure Report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ownbackendapis/target/site/allure-maven-plugin
+      - name: Upload Allure Report Artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:     
+          name: allure-report 
+          path: ownbackendapis/target/site/allure-maven-plugin  
+          
