@@ -45,15 +45,10 @@ jobs:
         working-directory: ownbackendapis
         run: mvn clean test
 
-      - name: Publish TestNG Report to GitHub Pages
+      - name: Publish TestNG Summary
         if: always()
         run: |
-          mkdir -p public
-          cp -r ownbackendapis/target/surefire-reports/* public/
-          touch public/.nojekyll
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          echo "## 🧪 API Automation Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### TestNG Summary" >> $GITHUB_STEP_SUMMARY
+          grep -E "Tests run:|Failures:|Errors:|Skipped:" ownbackendapis/target/surefire-reports/*.txt >> $GITHUB_STEP_SUMMARY || true
